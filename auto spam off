@@ -1,6 +1,20 @@
 _G.on = 0
     while _G.on == 1
  do
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-369, 15735.1797, -9)
+local args = {
+    [1] = {
+        [1] = "+FS6"
+    }
+}
+wait()
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+
+
+_G.on = 0
+    while _G.on == 1
+ do
 local Remote = game.ReplicatedStorage['RemoteEvent']
 
 local Arguments = {
@@ -38,5 +52,3 @@ local Arguments = {
 }
 wait()
 Remote:FireServer(unpack(Arguments))end
-end
-end)
