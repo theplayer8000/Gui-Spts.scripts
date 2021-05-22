@@ -1,3 +1,4 @@
+while wait(.0000001) do 
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuBtn.BackgroundColor3 = Color3.new(0,0,0)
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.SkillFrame.BackgroundColor3 = Color3.new(0,0,0)
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.GangFrame.BackgroundColor3 = Color3.new(0,0,0)
@@ -52,4 +53,4 @@ game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.SettingFram
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.SettingFrame.SettingTxt17.TextColor3 = Color3.new(74, 195, 68)
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.SettingFrame.SettingTxt18.TextColor3 = Color3.new(74, 195, 68)
 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.MenuFrame.SettingFrame.SettingTxt0.TextColor3 = Color3.new(74, 195, 68)
-
+end
