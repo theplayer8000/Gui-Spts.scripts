@@ -84,6 +84,8 @@ _1xhub.TextColor3 = Color3.fromRGB(170, 0, 0)
 _1xhub.TextScaled = true
 _1xhub.TextSize = 14.000
 _1xhub.TextWrapped = true
+_1xhub.Active = true
+_1xhub.Draggable = true
 
 psychicallon.Name = "psychic all on"
 psychicallon.Parent = ScrollingFrame
