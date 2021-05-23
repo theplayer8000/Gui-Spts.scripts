@@ -64,7 +64,7 @@ ScrollingFrame.Parent = ScreenGui
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(31, 30, 45)
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 6
+ScrollingFrame.BorderSizePixel = 10
 ScrollingFrame.Position = UDim2.new(0.278625906, 0, 0.246722281, 0)
 ScrollingFrame.Size = UDim2.new(0, 649, 0, 469)
 ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
@@ -84,8 +84,6 @@ _1xhub.TextColor3 = Color3.fromRGB(170, 0, 0)
 _1xhub.TextScaled = true
 _1xhub.TextSize = 14.000
 _1xhub.TextWrapped = true
-_1xhub.Active = true
-_1xhub.Draggable = true
 
 psychicallon.Name = "psychic all on"
 psychicallon.Parent = ScrollingFrame
