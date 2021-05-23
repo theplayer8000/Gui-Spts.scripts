@@ -68,6 +68,8 @@ ScrollingFrame.BorderSizePixel = 6
 ScrollingFrame.Position = UDim2.new(0.278625906, 0, 0.246722281, 0)
 ScrollingFrame.Size = UDim2.new(0, 649, 0, 469)
 ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ScrollingFrame.Active = true
+ScrollingFrame.Draggable = true
 
 _1xhub.Name = "1xhub "
 _1xhub.Parent = ScrollingFrame
