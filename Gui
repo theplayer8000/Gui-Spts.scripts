@@ -4,97 +4,86 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local togglegui = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local _1xhub = Instance.new("TextLabel")
 local psychicallon = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
 local blackhub2 = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local serverrankchanger = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local autoattackoff = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local psychicalloff = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local multiesp = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local respawnscript = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local blackhub1 = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local infyield = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local cmdx = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local chatspy = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local Autoattack = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local bettergraphics = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local blockscriptfe = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local animationmoves = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local trainfist = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local antichatspy = Instance.new("TextButton")
-local UICorner_18 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
 local godmode = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local cbring = Instance.new("TextButton")
-local UICorner_20 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
 local novoid = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 local earrape = Instance.new("TextButton")
-local UICorner_22 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local sptsdarkmode = Instance.new("TextButton")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local sptsdarkmode_2 = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
 local loopinvis = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local togglegui = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-togglegui.Name = "toggle gui"
-togglegui.Parent = ScreenGui
-togglegui.BackgroundColor3 = Color3.fromRGB(170, 17, 17)
-togglegui.Position = UDim2.new(0, 0, 0.818831921, 0)
-togglegui.Size = UDim2.new(0, 161, 0, 43)
-togglegui.Font = Enum.Font.SpecialElite
-togglegui.Text = "toggle Gui "
-togglegui.TextColor3 = Color3.fromRGB(0, 0, 0)
-togglegui.TextSize = 25.000
-togglegui.TextWrapped = true
-
-UICorner.Parent = togglegui
+ScreenGui.ResetOnSpawn = false
 
 ScrollingFrame.Parent = ScreenGui
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(31, 30, 45)
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 14
-ScrollingFrame.LayoutOrder = 6
-ScrollingFrame.Position = UDim2.new(0.271755666, 0, 0.205005944, 0)
+ScrollingFrame.BorderSizePixel = 6
+ScrollingFrame.Position = UDim2.new(0.278625906, 0, 0.246722281, 0)
 ScrollingFrame.Size = UDim2.new(0, 649, 0, 469)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 505)
 ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
 ScrollingFrame.Active = true
 ScrollingFrame.Draggable = true
+ScrollingFrame.Selectable = true
 
 
 _1xhub.Name = "1xhub "
 _1xhub.Parent = ScrollingFrame
 _1xhub.Active = true
 _1xhub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-_1xhub.Position = UDim2.new(0.0556391403, 0, -0.00232662074, 0)
+_1xhub.Position = UDim2.new(-0.00308166421, 0, -0.00215238519, 0)
 _1xhub.Selectable = true
-_1xhub.Size = UDim2.new(0, 537, 0, 43)
+_1xhub.Size = UDim2.new(0, 646, 0, 43)
 _1xhub.Font = Enum.Font.SciFi
 _1xhub.Text = "1xHub"
 _1xhub.TextColor3 = Color3.fromRGB(170, 0, 0)
@@ -117,7 +106,7 @@ psychicallon.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/psychic%20all%20on",true))()
 end)
 
-UICorner_2.Parent = psychicallon
+UICorner.Parent = psychicallon
 
 blackhub2.Name = "black hub 2"
 blackhub2.Parent = ScrollingFrame
@@ -134,7 +123,7 @@ blackhub2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/message.txt",true))()
 end)
 
-UICorner_3.Parent = blackhub2
+UICorner_2.Parent = blackhub2
 
 serverrankchanger.Name = "server rank changer"
 serverrankchanger.Parent = ScrollingFrame
@@ -151,7 +140,7 @@ serverrankchanger.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/server%20rank%20changer.txt",true))()
 end)
 
-UICorner_4.Parent = serverrankchanger
+UICorner_3.Parent = serverrankchanger
 
 autoattackoff.Name = "auto attack off"
 autoattackoff.Parent = ScrollingFrame
@@ -168,7 +157,7 @@ autoattackoff.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/auto%20spam%20off",true))()
 end)
 
-UICorner_5.Parent = autoattackoff
+UICorner_4.Parent = autoattackoff
 
 psychicalloff.Name = "psychic all off"
 psychicalloff.Parent = ScrollingFrame
@@ -185,7 +174,7 @@ psychicalloff.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/psychic%20all%20off",true))()
 end)
 
-UICorner_6.Parent = psychicalloff
+UICorner_5.Parent = psychicalloff
 
 multiesp.Name = "multi esp "
 multiesp.Parent = ScrollingFrame
@@ -202,7 +191,7 @@ multiesp.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/multi%20checker",true))()
 end)
 
-UICorner_7.Parent = multiesp
+UICorner_6.Parent = multiesp
 
 respawnscript.Name = "respawn script"
 respawnscript.Parent = ScrollingFrame
@@ -219,7 +208,7 @@ respawnscript.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Respawn-script-/main/respawn.txt", true))()
 end)
 
-UICorner_8.Parent = respawnscript
+UICorner_7.Parent = respawnscript
 
 blackhub1.Name = "black hub 1"
 blackhub1.Parent = ScrollingFrame
@@ -236,7 +225,7 @@ blackhub1.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Black_Hub.txt",true))()
 end)
 
-UICorner_9.Parent = blackhub1
+UICorner_8.Parent = blackhub1
 
 infyield.Name = "inf yield"
 infyield.Parent = ScrollingFrame
@@ -253,7 +242,7 @@ infyield.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-UICorner_10.Parent = infyield
+UICorner_9.Parent = infyield
 
 cmdx.Name = "cmd x"
 cmdx.Parent = ScrollingFrame
@@ -270,7 +259,7 @@ cmdx.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
 
-UICorner_11.Parent = cmdx
+UICorner_10.Parent = cmdx
 
 chatspy.Name = "chat spy"
 chatspy.Parent = ScrollingFrame
@@ -287,7 +276,7 @@ chatspy.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/chatspy.txt",true))()
 end)
 
-UICorner_12.Parent = chatspy
+UICorner_11.Parent = chatspy
 
 Autoattack.Name = "Auto attack"
 Autoattack.Parent = ScrollingFrame
@@ -304,7 +293,7 @@ Autoattack.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/auto%20spam%20on",true))()
 end)
 
-UICorner_13.Parent = Autoattack
+UICorner_12.Parent = Autoattack
 
 bettergraphics.Name = "better graphics"
 bettergraphics.Parent = ScrollingFrame
@@ -321,7 +310,7 @@ bettergraphics.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Ultra_Graphics_Script.lua",true))()
 end)
 
-UICorner_14.Parent = bettergraphics
+UICorner_13.Parent = bettergraphics
 
 blockscriptfe.Name = "block script fe"
 blockscriptfe.Parent = ScrollingFrame
@@ -339,7 +328,7 @@ blockscriptfe.MouseButton1Down:connect(function()
 	--script here
 end)
 
-UICorner_15.Parent = blockscriptfe
+UICorner_14.Parent = blockscriptfe
 
 animationmoves.Name = "animation moves"
 animationmoves.Parent = ScrollingFrame
@@ -356,7 +345,7 @@ animationmoves.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
 end)
 
-UICorner_16.Parent = animationmoves
+UICorner_15.Parent = animationmoves
 
 trainfist.Name = "train fist "
 trainfist.Parent = ScrollingFrame
@@ -373,7 +362,7 @@ trainfist.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/train%20fist",true))()
 end)
 
-UICorner_17.Parent = trainfist
+UICorner_16.Parent = trainfist
 
 antichatspy.Name = "anti chat spy"
 antichatspy.Parent = ScrollingFrame
@@ -390,7 +379,7 @@ antichatspy.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Anti_Chat_log.lua",true))()
 end)
 
-UICorner_18.Parent = antichatspy
+UICorner_17.Parent = antichatspy
 
 godmode.Name = "god mode"
 godmode.Parent = ScrollingFrame
@@ -407,7 +396,7 @@ godmode.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/god%20mode%20script.txt",true))()
 end)
 
-UICorner_19.Parent = godmode
+UICorner_18.Parent = godmode
 
 cbring.Name = "cbring"
 cbring.Parent = ScrollingFrame
@@ -425,7 +414,7 @@ cbring.MouseButton1Down:connect(function()
 	--script here
 end)
 
-UICorner_20.Parent = cbring
+UICorner_19.Parent = cbring
 
 novoid.Name = "novoid"
 novoid.Parent = ScrollingFrame
@@ -433,7 +422,7 @@ novoid.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 novoid.Position = UDim2.new(0.680762768, 0, 0.585569859, 0)
 novoid.Size = UDim2.new(0, 163, 0, 50)
 novoid.Font = Enum.Font.SourceSans
-novoid.Text = "[Novoid]                               (Usefull against most voids)"
+novoid.Text = "[Novoid]                                     (made a new one should work against this new void i beg)"
 novoid.TextColor3 = Color3.fromRGB(0, 0, 0)
 novoid.TextScaled = true
 novoid.TextSize = 14.000
@@ -442,7 +431,7 @@ novoid.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/novoid%20%20script",true))()
 end)
 
-UICorner_21.Parent = novoid
+UICorner_20.Parent = novoid
 
 earrape.Name = "ear rape"
 earrape.Parent = ScrollingFrame
@@ -459,7 +448,7 @@ earrape.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/ear%20rape%20loop.lua",true))()
 end)
 
-UICorner_22.Parent = earrape
+UICorner_21.Parent = earrape
 
 sptsdarkmode.Name = "spts darkmode"
 sptsdarkmode.Parent = ScrollingFrame
@@ -476,7 +465,7 @@ sptsdarkmode.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Spts%20darkmode.txt",true))()
 end)
 
-UICorner_23.Parent = sptsdarkmode
+UICorner_22.Parent = sptsdarkmode
 
 sptsdarkmode_2.Name = "spts darkmode"
 sptsdarkmode_2.Parent = ScrollingFrame
@@ -493,38 +482,54 @@ sptsdarkmode_2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Tornado.txt",true))()
 end)
 
-UICorner_24.Parent = sptsdarkmode_2
+UICorner_23.Parent = sptsdarkmode_2
 
 loopinvis.Name = "loop invis"
 loopinvis.Parent = ScrollingFrame
 loopinvis.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-loopinvis.Position = UDim2.new(0.0921714529, 0, 0.824822903, 0)
+loopinvis.Position = UDim2.new(0.0937122852, 0, 0.827206671, 0)
 loopinvis.Size = UDim2.new(0, 540, 0, 53)
 loopinvis.Font = Enum.Font.SourceSans
-loopinvis.Text = "[Loop invis]                                                                                                                (if you die you will need to rejoin for it to fix)"
+loopinvis.Text = "[Loop invis]                                                                                                            (if you die u gonna have to rejoin lol)"
 loopinvis.TextColor3 = Color3.fromRGB(0, 0, 0)
 loopinvis.TextScaled = true
 loopinvis.TextSize = 14.000
 loopinvis.TextWrapped = true
-_G.on = 1
-while _G.on == 1
-do
-	local args = {
-		[1] = {
-			[1] = "Skill_Invisible",
-			[2] = "Start"
+loopinvis.MouseButton1Down:connect(function()
+	_G.on = 1
+	while _G.on == 1
+	do
+		local args = {
+			[1] = {
+				[1] = "Skill_Invisible",
+				[2] = "Start"
+			}
 		}
-	}
 
-	game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-	game:GetService("Players").LocalPlayer.Character.Head.InvisibilityUseSound:Destroy()
-end
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+		game:GetService("Players").LocalPlayer.Character.Head.InvisibilityUseSound:Destroy()
+	end
+end)
+	
 
-UICorner_25.Parent = loopinvis
+UICorner_24.Parent = loopinvis
+
+togglegui.Name = "toggle gui"
+togglegui.Parent = ScreenGui
+togglegui.BackgroundColor3 = Color3.fromRGB(170, 17, 17)
+togglegui.Position = UDim2.new(0, 0, 0.818831921, 0)
+togglegui.Size = UDim2.new(0, 161, 0, 43)
+togglegui.Font = Enum.Font.SpecialElite
+togglegui.Text = "toggle Gui "
+togglegui.TextColor3 = Color3.fromRGB(0, 0, 0)
+togglegui.TextSize = 25.000
+togglegui.TextWrapped = true
+
+UICorner_25.Parent = togglegui
 
 -- Scripts:
 
-local function KHVM_fake_script() -- togglegui.LocalScript 
+local function KHTZMGD_fake_script() -- togglegui.LocalScript 
 	local script = Instance.new('LocalScript', togglegui)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -532,4 +537,4 @@ local function KHVM_fake_script() -- togglegui.LocalScript
 	end)
 	
 end
-coroutine.wrap(KHVM_fake_script)()
+coroutine.wrap(KHTZMGD_fake_script)()
