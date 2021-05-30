@@ -1,3 +1,8 @@
-game:GetService('RunService').Stepped:connect(function()
-        game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-end)
+_G.on = 1
+while _G.on == 1 do
+    wait()
+    if game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+        game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
+    end
+    game.Players.LocalPlayer.Backpack:ClearAllChildren()
+end
