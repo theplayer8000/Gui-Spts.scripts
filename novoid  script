@@ -1,6 +1,4 @@
-_G.on = 1
-while _G.on == 1 do
-    wait()
+while wait() do
     if game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool") then
         game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
     end
