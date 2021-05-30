@@ -428,7 +428,9 @@ novoid.TextScaled = true
 novoid.TextSize = 14.000
 novoid.TextWrapped = true
 novoid.MouseButton1Down:connect(function()
+	while true do
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/novoid%20%20script",true))()
+	end
 end)
 
 UICorner_20.Parent = novoid
