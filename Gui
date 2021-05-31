@@ -1062,19 +1062,25 @@ togglegui.TextWrapped = true
 UICorner_25.Parent = togglegui
 
 -- Scripts:
+local function SNLWZP_fake_script() -- ScrollingFrame.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame)
 
-local function KHTZMGD_fake_script() -- togglegui.LocalScript 
-	local script = Instance.new('LocalScript', togglegui)
+	local plr = game.Players.LocalPlayer
 	
-	local Imput = game:GetService("UserInputService")
-	Imput.InputBegan:connect(function(inst)
-		if inst.KeyCode == Enum.KeyCode.q then
-			script.Parent.Parent.ScrollingFrame.Visible = not script.Parent.Parent.ScrollingFrame.Visible
+	
+	plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "q" then
+			script.Parent.Visible = not script.Parent.Visible
 		end
+	end)
+end
+coroutine.wrap(SNLWZP_fake_script)()
+local function KWMJ_fake_script() -- togglegui.LocalScript 
+	local script = Instance.new('LocalScript', togglegui)
+
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.ScrollingFrame.Visible = not script.Parent.Parent.ScrollingFrame.Visible
-		
 	end)
 	
 end
-coroutine.wrap(KHTZMGD_fake_script)()
+coroutine.wrap(KWMJ_fake_script)()
