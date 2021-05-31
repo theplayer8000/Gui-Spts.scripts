@@ -411,7 +411,7 @@ cbring.TextScaled = true
 cbring.TextSize = 14.000
 cbring.TextWrapped = true
 cbring.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character.Head.RankBbGui: Destroy()
+	game.Players.LocalPlayer.Character.Head.NameBbGui.NameTxt: Destroy()
 end)
 
 UICorner_19.Parent = cbring
