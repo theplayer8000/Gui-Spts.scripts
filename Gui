@@ -74,10 +74,10 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 6
 ScrollingFrame.Position = UDim2.new(0.278625906, 0, 0.246722281, 0)
 ScrollingFrame.Size = UDim2.new(0, 649, 0, 469)
+ScrollingFrame.Visible = false
 ScrollingFrame.CanvasPosition = Vector2.new(0, 130.999969)
 ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
 ScrollingFrame.Draggable = true
-ScrollingFrame.Active = true
 ScrollingFrame.Selectable = true
 
 _1xhub.Name = "1.X.H.U.B"
