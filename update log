@@ -3,46 +3,73 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
+local Updatelog = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Updatelog.Name = "Update log"
+Updatelog.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Updatelog.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.Position = UDim2.new(0.0837004408, 0, 0.027413588, 0)
-Frame.Size = UDim2.new(0, 258, 0, 146)
+Frame.Parent = Updatelog
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.180866957, 0, 0.163822517, 0)
+Frame.Size = UDim2.new(0, 928, 0, 562)
 
 TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.Position = UDim2.new(0.112403102, 0, 0.191780835, 0)
+TextLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.Position = UDim2.new(0.367456883, 0, 0.117265172, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "New update : press Q to toggle Gui "
+TextLabel.Text = "SOooo update yes fun innit "
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 14.000
 
 TextLabel_2.Parent = Frame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.Position = UDim2.new(0.112403095, 0, 0.595890403, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel_2.Position = UDim2.new(0.27693966, 0, 0.435080379, 0)
+TextLabel_2.Size = UDim2.new(0, 339, 0, 222)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "this dissapears in 8 seconds"
+TextLabel_2.Text = "so basically new sounds for like every button and i also added a spam void gui i made "
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel_3.Position = UDim2.new(0.37931034, 0, 0.264952004, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "i might just keep this giant pop up here to annoy the fuck out of you LOL"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UICorner.Parent = Frame
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel_4.Position = UDim2.new(0.840303302, 0, 0.939329326, 0)
+TextLabel_4.Size = UDim2.new(0, 137, 0, 25)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "jk jk i'll remove it uhh 20 seconds?"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 11.000
+TextLabel_4.TextWrapped = true
 
 -- Scripts:
 
-local function SDJZFE_fake_script() -- Frame.LocalScript 
+local function CVHE_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	wait(8)
+	wait(9.999)
 	script.Parent.Parent.Frame.Visible = false
-	
 end
-coroutine.wrap(SDJZFE_fake_script)()
+coroutine.wrap(CVHE_fake_script)()
