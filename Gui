@@ -55,14 +55,17 @@ local sptsdarkmode_2 = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
 local loopinvis = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
-local togglegui = Instance.new("TextButton")
+local voidspam = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
+local togglegui = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
+
 
 ScrollingFrame.Parent = ScreenGui
 ScrollingFrame.Active = true
@@ -71,20 +74,19 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 6
 ScrollingFrame.Position = UDim2.new(0.278625906, 0, 0.246722281, 0)
 ScrollingFrame.Size = UDim2.new(0, 649, 0, 469)
-ScrollingFrame.CanvasPosition = Vector2.new(0, 505)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 130.999969)
 ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-ScrollingFrame.Active = true
 ScrollingFrame.Draggable = true
+ScrollingFrame.Active = true
 ScrollingFrame.Selectable = true
 
-
-_1xhub.Name = "1xhub "
+_1xhub.Name = "1.X.H.U.B"
 _1xhub.Parent = ScrollingFrame
 _1xhub.Active = true
 _1xhub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 _1xhub.Position = UDim2.new(-0.00308166421, 0, -0.00215238519, 0)
 _1xhub.Selectable = true
-_1xhub.Size = UDim2.new(0, 646, 0, 43)
+_1xhub.Size = UDim2.new(0, 620, 0, 43)
 _1xhub.Font = Enum.Font.SciFi
 _1xhub.Text = "1xHub"
 _1xhub.TextColor3 = Color3.fromRGB(170, 0, 0)
@@ -104,6 +106,13 @@ psychicallon.TextScaled = true
 psychicallon.TextSize = 25.000
 psychicallon.TextWrapped = true
 psychicallon.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/psychic%20all%20on",true))()
 end)
 
@@ -121,6 +130,13 @@ blackhub2.TextScaled = true
 blackhub2.TextSize = 14.000
 blackhub2.TextWrapped = true
 blackhub2.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/message.txt",true))()
 end)
 
@@ -138,6 +154,13 @@ serverrankchanger.TextScaled = true
 serverrankchanger.TextSize = 14.000
 serverrankchanger.TextWrapped = true
 serverrankchanger.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/server%20rank%20changer.txt",true))()
 end)
 
@@ -155,6 +178,13 @@ autoattackoff.TextScaled = true
 autoattackoff.TextSize = 14.000
 autoattackoff.TextWrapped = true
 autoattackoff.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/auto%20spam%20off",true))()
 end)
 
@@ -172,6 +202,13 @@ psychicalloff.TextScaled = true
 psychicalloff.TextSize = 14.000
 psychicalloff.TextWrapped = true
 psychicalloff.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/psychic%20all%20off",true))()
 end)
 
@@ -189,6 +226,13 @@ multiesp.TextScaled = true
 multiesp.TextSize = 14.000
 multiesp.TextWrapped = true
 multiesp.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/multi%20checker",true))()
 end)
 
@@ -206,6 +250,13 @@ respawnscript.TextScaled = true
 respawnscript.TextSize = 14.000
 respawnscript.TextWrapped = true
 respawnscript.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Respawn-script-/main/respawn.txt", true))()
 end)
 
@@ -223,6 +274,13 @@ blackhub1.TextScaled = true
 blackhub1.TextSize = 14.000
 blackhub1.TextWrapped = true
 blackhub1.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Black_Hub.txt",true))()
 end)
 
@@ -240,6 +298,13 @@ infyield.TextScaled = true
 infyield.TextSize = 14.000
 infyield.TextWrapped = true
 infyield.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
@@ -257,6 +322,13 @@ cmdx.TextScaled = true
 cmdx.TextSize = 14.000
 cmdx.TextWrapped = true
 cmdx.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
 
@@ -291,6 +363,13 @@ Autoattack.TextScaled = true
 Autoattack.TextSize = 38.000
 Autoattack.TextWrapped = true
 Autoattack.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/auto%20spam%20on",true))()
 end)
 
@@ -308,6 +387,13 @@ bettergraphics.TextScaled = true
 bettergraphics.TextSize = 14.000
 bettergraphics.TextWrapped = true
 bettergraphics.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Ultra_Graphics_Script.lua",true))()
 end)
 
@@ -343,6 +429,13 @@ animationmoves.TextScaled = true
 animationmoves.TextSize = 14.000
 animationmoves.TextWrapped = true
 animationmoves.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
 end)
 
@@ -360,6 +453,13 @@ trainfist.TextScaled = true
 trainfist.TextSize = 14.000
 trainfist.TextWrapped = true
 trainfist.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/train%20fist",true))()
 end)
 
@@ -377,6 +477,13 @@ antichatspy.TextScaled = true
 antichatspy.TextSize = 14.000
 antichatspy.TextWrapped = true
 antichatspy.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Anti_Chat_log.lua",true))()
 end)
 
@@ -394,23 +501,37 @@ godmode.TextScaled = true
 godmode.TextSize = 14.000
 godmode.TextWrapped = true
 godmode.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/god%20mode%20script.txt",true))()
 end)
 
 UICorner_18.Parent = godmode
 
-cbring.Name = "cbring"
+cbring.Name = "Keep rep script"
 cbring.Parent = ScrollingFrame
 cbring.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 cbring.Position = UDim2.new(0.369514674, 0, 0.579409719, 0)
 cbring.Size = UDim2.new(0, 163, 0, 50)
 cbring.Font = Enum.Font.SourceSans
-cbring.Text = "[Keep rep script]"
+cbring.Text = "[Keep Rep script]"
 cbring.TextColor3 = Color3.fromRGB(0, 0, 0)
 cbring.TextScaled = true
 cbring.TextSize = 14.000
 cbring.TextWrapped = true
 cbring.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	game.Players.LocalPlayer.Character.Head.NameBbGui.NameTxt: Destroy()
 end)
 
@@ -428,8 +549,15 @@ novoid.TextScaled = true
 novoid.TextSize = 14.000
 novoid.TextWrapped = true
 novoid.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	while true do
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/novoid%20%20script",true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/novoid%20%20script",true))()
 	end
 end)
 
@@ -447,6 +575,13 @@ earrape.TextScaled = true
 earrape.TextSize = 14.000
 earrape.TextWrapped = true
 earrape.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/ear%20rape%20loop.lua",true))()
 end)
 
@@ -464,6 +599,13 @@ sptsdarkmode.TextScaled = true
 sptsdarkmode.TextSize = 14.000
 sptsdarkmode.TextWrapped = true
 sptsdarkmode.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Spts%20darkmode.txt",true))()
 end)
 
@@ -481,6 +623,13 @@ sptsdarkmode_2.TextScaled = true
 sptsdarkmode_2.TextSize = 14.000
 sptsdarkmode_2.TextWrapped = true
 sptsdarkmode_2.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=196904458"
+	s.Volume = 100
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Tornado.txt",true))()
 end)
 
@@ -498,6 +647,13 @@ loopinvis.TextScaled = true
 loopinvis.TextSize = 14.000
 loopinvis.TextWrapped = true
 loopinvis.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=137473066"
+	s.Volume = 10
+	s.Looped = false
+	s.archivable = false
+	s:play()
 	_G.on = 1
 	while _G.on == 1
 	do
@@ -512,9 +668,32 @@ loopinvis.MouseButton1Down:connect(function()
 		game:GetService("Players").LocalPlayer.Character.Head.InvisibilityUseSound:Destroy()
 	end
 end)
-	
 
 UICorner_24.Parent = loopinvis
+
+voidspam.Name = "void spam"
+voidspam.Parent = ScrollingFrame
+voidspam.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+voidspam.Position = UDim2.new(0.0906306207, 0, 0.911562502, 0)
+voidspam.Size = UDim2.new(0, 540, 0, 53)
+voidspam.Font = Enum.Font.SourceSans
+voidspam.Text = "[Void spam]                                                                                                                (if it breaks re-xecute)"
+voidspam.TextColor3 = Color3.fromRGB(0, 0, 0)
+voidspam.TextScaled = true
+voidspam.TextSize = 14.000
+voidspam.TextWrapped = true
+voidspam.MouseButton1Down:connect(function()
+	s = Instance.new("Sound",game.Workspace)
+	s.Name = "Sound"
+	s.SoundId = "http://www.roblox.com/asset?id=137473066"
+	s.Volume = 10
+	s.Looped = false
+	s.archivable = false
+	s:play()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/spam%20void",true))()
+end)
+
+UICorner_25.Parent = voidspam
 
 togglegui.Name = "toggle gui"
 togglegui.Parent = ScreenGui
@@ -522,15 +701,16 @@ togglegui.BackgroundColor3 = Color3.fromRGB(170, 17, 17)
 togglegui.Position = UDim2.new(0, 0, 0.818831921, 0)
 togglegui.Size = UDim2.new(0, 161, 0, 43)
 togglegui.Font = Enum.Font.SpecialElite
-togglegui.Text = "toggle Gui (press {Q} to toggle) "
+togglegui.Text = "toggle Gui "
 togglegui.TextColor3 = Color3.fromRGB(0, 0, 0)
 togglegui.TextSize = 25.000
 togglegui.TextWrapped = true
 
-UICorner_25.Parent = togglegui
+UICorner_26.Parent = togglegui
 
 -- Scripts:
-local function SNLWZP_fake_script() -- ScrollingFrame.LocalScript 
+
+local function VDBBCCV_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	local plr = game.Players.LocalPlayer
@@ -542,13 +722,20 @@ local function SNLWZP_fake_script() -- ScrollingFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SNLWZP_fake_script)()
-local function KWMJ_fake_script() -- togglegui.LocalScript 
+coroutine.wrap(VDBBCCV_fake_script)()
+local function YIPSEBZ_fake_script() -- togglegui.LocalScript 
 	local script = Instance.new('LocalScript', togglegui)
 
 	script.Parent.MouseButton1Click:Connect(function()
+		s = Instance.new("Sound",game.Workspace)
+		s.Name = "Sound"
+		s.SoundId = "http://www.roblox.com/asset?id=196904458"
+		s.Volume = 100
+		s.Looped = false
+		s.archivable = false
+		s:play()
 		script.Parent.Parent.ScrollingFrame.Visible = not script.Parent.Parent.ScrollingFrame.Visible
 	end)
 	
 end
-coroutine.wrap(KWMJ_fake_script)()
+coroutine.wrap(YIPSEBZ_fake_script)()
