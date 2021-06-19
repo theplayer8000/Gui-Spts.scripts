@@ -4,10 +4,10 @@ _G.toggle = false
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local X = Material.Load({
-    Title = "Void(made by 1xToxsins#8515)",
+    Title = "Void:\n(made by 1xToxsins#8515)\n major credits to Corey#7787 for helping",
     Style = 6,
-    SizeX = 260,
-    SizeY = 120,
+    SizeX = 280,
+    SizeY = 140,
     Theme = "Dark"
 })
 
@@ -32,8 +32,9 @@ local B = Main.Toggle({
 })
 
 
-while wait(2) do
-
+local Imput = game:GetService("UserInputService")
+	Imput.InputBegan:connect(function(inst)
+	if inst.KeyCode == Enum.KeyCode.K then
 if _G.toggle then
 game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
 local player = game.Players.LocalPlayer
@@ -169,3 +170,4 @@ end
     cmdlp.CharacterAdded:Wait()
 end
 end
+end)
