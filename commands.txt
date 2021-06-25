@@ -1,7 +1,3 @@
-local nigga = game.Players.PlayerAdded
-nigga:Connect(function(player)
-if player.name == "1xToxsins" then
-wait(5)
 
 
 local prefix = "."
@@ -17,10 +13,10 @@ Players.Chatted:connect(
 
 Players.Chatted:connect(
     function(msg)
-        if string.sub(string.lower(msg), 1, 9) == prefix .. "blackhub" then
+        if string.sub(string.lower(msg), 1, 9) == prefix .. "multiesp" then
             loadstring(
                 game:HttpGet(
-                    "https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Black_Hub.txt",
+                    "https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/multi%20checker",
                     true
                 )
             )()
