@@ -1,4 +1,5 @@
-game.Loaded:Wait(2)
+wait(5)
+
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/update%20log",true))()
 -- Gui to Lua
