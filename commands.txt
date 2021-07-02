@@ -1,4 +1,28 @@
 
+local function toCFrame(String, Separator) ---SOme code i found in the roblox dev forum
+    local Separator = Separator or ","
+    local axes = {}
+    for axis in String:gmatch("[^" .. Separator .. "]+") do
+        axes[#axes + 1] = axis
+    end
+    return CFrame.new(axes[1], axes[2], axes[3])
+end
+wait(5)
+game.Lighting.Blur.Enabled = false
+ game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+
+
+game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+wait(4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = toCFrame(readfile("location.txt"), ", ")
+game.Lighting.Blur.Enabled = false
+ game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+wait()
+game.Lighting.Blur.Enabled = false
+ game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
 
 local prefix = "."
 local Players = game:GetService("Players").LocalPlayer
@@ -47,6 +71,7 @@ Players.Chatted:connect(
         Players.Chatted:connect(
             function(msg)
                 if string.sub(string.lower(msg), 1, 4) == prefix .. "dip" then
+		    wait(.5)
                     game:Shutdown()
                 end
             end
@@ -223,8 +248,7 @@ Players.Chatted:connect(
         if string.sub(string.lower(msg), 1, 7) == prefix .. "novoid" then
             for _, v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
                 if
-                    v.Name == "RightUpperArm" or v.Name == "LeftUpperArm" or v.Name == "RightUpperLeg" or
-                        v.Name == "LeftUpperLeg"
+                    v.Name == "RightHand" or v.Name == "LeftHand"
                  then
                     v:Destroy()
                 end
@@ -250,6 +274,27 @@ Players.Chatted:connect(
                     true
                 )
             )()
+        end
+    end
+)
+
+
+
+
+
+local function toCFrame(String, Separator) ---SOme code i found in the roblox dev forum
+    local Separator = Separator or ','
+    local axes = {}
+    for axis in String:gmatch('[^'..Separator..']+') do
+        axes[#axes + 1] = axis
+    end
+    return CFrame.new(axes[1], axes[2], axes[3])
+end
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 9) == prefix .. "setspawn" then
+            local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            writefile("location.txt" , tostring(pos))
         end
     end
 )
