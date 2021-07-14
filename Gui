@@ -79,9 +79,6 @@ ScrollingFrame.Size = UDim2.new(0, 649, 0, 469)
 ScrollingFrame.Visible = false
 ScrollingFrame.CanvasPosition = Vector2.new(0, 130.999969)
 ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-ScrollingFrame.Selectable = true
-ScrollingFrame.Active = true
-ScrollingFrame.Draggable = true
 
 _1xhub.Name = "1.X.H.U.B"
 _1xhub.Parent = ScrollingFrame
@@ -742,3 +739,14 @@ local function YIPSEBZ_fake_script() -- togglegui.LocalScript
 	
 end
 coroutine.wrap(YIPSEBZ_fake_script)()
+
+
+local function XRPTLDZ_fake_script() -- MainFrame.draggablescript 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+
+	script.Parent.Selectable = true
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	
+end
+coroutine.wrap(XRPTLDZ_fake_script)()
