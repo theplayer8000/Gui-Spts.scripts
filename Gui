@@ -81,7 +81,7 @@ ScrollingFrame.CanvasPosition = Vector2.new(0, 130.999969)
 ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
 ScrollingFrame.Selectable = true
 ScrollingFrame.Active = true
-ScrollingFrame.Draggable
+ScrollingFrame.Draggable = true
 
 _1xhub.Name = "1.X.H.U.B"
 _1xhub.Parent = ScrollingFrame
