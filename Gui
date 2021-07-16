@@ -1,752 +1,817 @@
+wait(5)
+game.Lighting.Blur.Enabled = false
+game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+
+game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+wait(1)
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/update%20log",true))()
+
+
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local _1xhub = Instance.new("TextLabel")
-local psychicallon = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local blackhub2 = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local serverrankchanger = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local forward1 = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local autoattack = Instance.new("TextButton")
 local autoattackoff = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local psychicalloff = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local multiesp = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local respawnscript = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local blackhub1 = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local infyield = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local PsychicAll = Instance.new("TextButton")
+local PsychicAllOff = Instance.new("TextButton")
+local PsychicToggle = Instance.new("TextButton")
+local RankChanger = Instance.new("TextButton")
+local blackhub = Instance.new("TextButton")
+local blackhub20 = Instance.new("TextButton")
 local cmdx = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local chatspy = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local Autoattack = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local bettergraphics = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local blockscriptfe = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
-local animationmoves = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
-local trainfist = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
-local antichatspy = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
+local respawnScript = Instance.new("TextButton")
+local MultiChecker = Instance.new("TextButton")
+local clicktotp = Instance.new("TextButton")
+local Repscript = Instance.new("TextButton")
+local ChatSpy = Instance.new("TextButton")
+local AntiChatLogger = Instance.new("TextButton")
+local togglegui = Instance.new("ImageButton")
+local MainFrame2 = Instance.new("Frame")
+local backwards = Instance.new("ImageButton")
+local forward2 = Instance.new("ImageButton")
+local OpVoid = Instance.new("TextButton")
+local InvisLoop = Instance.new("TextButton")
+local Novoid = Instance.new("TextButton")
+local DarkMode = Instance.new("TextButton")
+local TrainFist = Instance.new("TextButton")
+local MainFrame3 = Instance.new("Frame")
+local backwards_2 = Instance.new("ImageButton")
+local forward2_2 = Instance.new("ImageButton")
+local Zen = Instance.new("TextButton")
+local Spawn = Instance.new("TextButton")
+local LeaderBoard = Instance.new("TextButton")
 local godmode = Instance.new("TextButton")
-local UICorner_18 = Instance.new("UICorner")
-local cbring = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
-local novoid = Instance.new("TextButton")
-local UICorner_20 = Instance.new("UICorner")
-local earrape = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
-local sptsdarkmode = Instance.new("TextButton")
-local UICorner_22 = Instance.new("UICorner")
-local sptsdarkmode_2 = Instance.new("TextButton")
-local UICorner_23 = Instance.new("UICorner")
-local loopinvis = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
-local voidspam = Instance.new("TextButton")
-local UICorner_25 = Instance.new("UICorner")
-local togglegui = Instance.new("TextButton")
-local UICorner_26 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ResetOnSpawn = false
 
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BorderSizePixel = 4
+MainFrame.Position = UDim2.new(0.218935221, 0, 0.233322993, 0)
+MainFrame.Size = UDim2.new(0, 773, 0, 467)
+MainFrame.Visible = false
 
-ScrollingFrame.Parent = ScreenGui
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(31, 30, 45)
-ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 6
-ScrollingFrame.Position = UDim2.new(0.278625906, 0, 0.246722281, 0)
-ScrollingFrame.Size = UDim2.new(0, 649, 0, 469)
-ScrollingFrame.Visible = false
-ScrollingFrame.CanvasPosition = Vector2.new(0, 130.999969)
-ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+forward1.Name = "forward1"
+forward1.Parent = MainFrame
+forward1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+forward1.Position = UDim2.new(0.880565226, 0, 0.389721632, 0)
+forward1.Size = UDim2.new(0, 91, 0, 100)
+forward1.Image = "http://www.roblox.com/asset/?id=1594671524"
+forward1.ImageColor3 = Color3.fromRGB(0, 255, 255)
 
-_1xhub.Name = "1.X.H.U.B"
-_1xhub.Parent = ScrollingFrame
-_1xhub.Active = true
-_1xhub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-_1xhub.Position = UDim2.new(-0.00308166421, 0, -0.00215238519, 0)
-_1xhub.Selectable = true
-_1xhub.Size = UDim2.new(0, 620, 0, 43)
-_1xhub.Font = Enum.Font.SciFi
-_1xhub.Text = "1xHub"
-_1xhub.TextColor3 = Color3.fromRGB(170, 0, 0)
-_1xhub.TextScaled = true
-_1xhub.TextSize = 14.000
-_1xhub.TextWrapped = true
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Size = UDim2.new(0, 773, 0, 50)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Main Page |Made by Tosin 😎"
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
-psychicallon.Name = "psychic all on"
-psychicallon.Parent = ScrollingFrame
-psychicallon.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-psychicallon.Position = UDim2.new(0.369514793, 0, 0.0500504188, 0)
-psychicallon.Size = UDim2.new(0, 163, 0, 50)
-psychicallon.Font = Enum.Font.SourceSans
-psychicallon.Text = "[Psychic all]"
-psychicallon.TextColor3 = Color3.fromRGB(0, 0, 0)
-psychicallon.TextScaled = true
-psychicallon.TextSize = 25.000
-psychicallon.TextWrapped = true
-psychicallon.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/psychic%20all%20on",true))()
-end)
-
-UICorner.Parent = psychicallon
-
-blackhub2.Name = "black hub 2"
-blackhub2.Parent = ScrollingFrame
-blackhub2.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-blackhub2.Position = UDim2.new(0.369514734, 0, 0.220481634, 0)
-blackhub2.Size = UDim2.new(0, 163, 0, 50)
-blackhub2.Font = Enum.Font.SourceSans
-blackhub2.Text = "[BlackHub2]"
-blackhub2.TextColor3 = Color3.fromRGB(0, 0, 0)
-blackhub2.TextScaled = true
-blackhub2.TextSize = 14.000
-blackhub2.TextWrapped = true
-blackhub2.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/message.txt",true))()
-end)
-
-UICorner_2.Parent = blackhub2
-
-serverrankchanger.Name = "server rank changer"
-serverrankchanger.Parent = ScrollingFrame
-serverrankchanger.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-serverrankchanger.Position = UDim2.new(0.680762887, 0, 0.222121403, 0)
-serverrankchanger.Size = UDim2.new(0, 163, 0, 50)
-serverrankchanger.Font = Enum.Font.SourceSans
-serverrankchanger.Text = "[Rank changer]"
-serverrankchanger.TextColor3 = Color3.fromRGB(0, 0, 0)
-serverrankchanger.TextScaled = true
-serverrankchanger.TextSize = 14.000
-serverrankchanger.TextWrapped = true
-serverrankchanger.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/server%20rank%20changer.txt",true))()
-end)
-
-UICorner_3.Parent = serverrankchanger
+autoattack.Name = "auto attack"
+autoattack.Parent = MainFrame
+autoattack.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+autoattack.BorderColor3 = Color3.fromRGB(74, 74, 74)
+autoattack.BorderSizePixel = 7
+autoattack.Position = UDim2.new(0.032341525, 0, 0.162740901, 0)
+autoattack.Size = UDim2.new(0, 200, 0, 50)
+autoattack.Font = Enum.Font.SciFi
+autoattack.Text = "Auto Attack"
+autoattack.TextColor3 = Color3.fromRGB(0, 255, 255)
+autoattack.TextSize = 14.000
+autoattack.TextWrapped = true
 
 autoattackoff.Name = "auto attack off"
-autoattackoff.Parent = ScrollingFrame
-autoattackoff.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-autoattackoff.Position = UDim2.new(0.0567258671, 0, 0.131772339, 0)
-autoattackoff.Size = UDim2.new(0, 163, 0, 50)
-autoattackoff.Font = Enum.Font.SourceSans
-autoattackoff.Text = "[Auto attack off]"
-autoattackoff.TextColor3 = Color3.fromRGB(0, 0, 0)
-autoattackoff.TextScaled = true
+autoattackoff.Parent = MainFrame
+autoattackoff.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+autoattackoff.BorderColor3 = Color3.fromRGB(74, 74, 74)
+autoattackoff.BorderSizePixel = 7
+autoattackoff.Position = UDim2.new(0.369987071, 0, 0.162740901, 0)
+autoattackoff.Size = UDim2.new(0, 200, 0, 50)
+autoattackoff.Font = Enum.Font.SciFi
+autoattackoff.Text = "Auto Attack off"
+autoattackoff.TextColor3 = Color3.fromRGB(0, 255, 255)
 autoattackoff.TextSize = 14.000
 autoattackoff.TextWrapped = true
-autoattackoff.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/auto%20spam%20off",true))()
-end)
 
-UICorner_4.Parent = autoattackoff
+PsychicAll.Name = "Psychic All"
+PsychicAll.Parent = MainFrame
+PsychicAll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PsychicAll.BorderColor3 = Color3.fromRGB(74, 74, 74)
+PsychicAll.BorderSizePixel = 7
+PsychicAll.Position = UDim2.new(0.032341525, 0, 0.336188436, 0)
+PsychicAll.Size = UDim2.new(0, 200, 0, 50)
+PsychicAll.Font = Enum.Font.SciFi
+PsychicAll.Text = "Psychic All"
+PsychicAll.TextColor3 = Color3.fromRGB(0, 255, 255)
+PsychicAll.TextSize = 14.000
+PsychicAll.TextWrapped = true
 
-psychicalloff.Name = "psychic all off"
-psychicalloff.Parent = ScrollingFrame
-psychicalloff.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-psychicalloff.Position = UDim2.new(0.680762827, 0, 0.050663501, 0)
-psychicalloff.Size = UDim2.new(0, 163, 0, 50)
-psychicalloff.Font = Enum.Font.SourceSans
-psychicalloff.Text = "[Psychic all off]"
-psychicalloff.TextColor3 = Color3.fromRGB(0, 0, 0)
-psychicalloff.TextScaled = true
-psychicalloff.TextSize = 14.000
-psychicalloff.TextWrapped = true
-psychicalloff.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/psychic%20all%20off",true))()
-end)
+PsychicAllOff.Name = "Psychic All Off"
+PsychicAllOff.Parent = MainFrame
+PsychicAllOff.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PsychicAllOff.BorderColor3 = Color3.fromRGB(74, 74, 74)
+PsychicAllOff.BorderSizePixel = 7
+PsychicAllOff.Position = UDim2.new(0.369987071, 0, 0.336188436, 0)
+PsychicAllOff.Size = UDim2.new(0, 200, 0, 50)
+PsychicAllOff.Font = Enum.Font.SciFi
+PsychicAllOff.Text = "Psychic All Off"
+PsychicAllOff.TextColor3 = Color3.fromRGB(0, 255, 255)
+PsychicAllOff.TextSize = 14.000
+PsychicAllOff.TextWrapped = true
 
-UICorner_5.Parent = psychicalloff
+PsychicToggle.Name = "Psychic Toggle"
+PsychicToggle.Parent = MainFrame
+PsychicToggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PsychicToggle.BorderColor3 = Color3.fromRGB(74, 74, 74)
+PsychicToggle.BorderSizePixel = 7
+PsychicToggle.Position = UDim2.new(0.70892626, 0, 0.162740886, 0)
+PsychicToggle.Size = UDim2.new(0, 200, 0, 50)
+PsychicToggle.Font = Enum.Font.SciFi
+PsychicToggle.Text = "Psychic Toggle"
+PsychicToggle.TextColor3 = Color3.fromRGB(0, 255, 255)
+PsychicToggle.TextSize = 14.000
+PsychicToggle.TextWrapped = true
 
-multiesp.Name = "multi esp "
-multiesp.Parent = ScrollingFrame
-multiesp.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-multiesp.Position = UDim2.new(0.680762827, 0, 0.132054999, 0)
-multiesp.Size = UDim2.new(0, 163, 0, 50)
-multiesp.Font = Enum.Font.SourceSans
-multiesp.Text = "[Multi esp]"
-multiesp.TextColor3 = Color3.fromRGB(0, 0, 0)
-multiesp.TextScaled = true
-multiesp.TextSize = 14.000
-multiesp.TextWrapped = true
-multiesp.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/multi%20checker",true))()
-end)
+RankChanger.Name = "RankChanger"
+RankChanger.Parent = MainFrame
+RankChanger.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RankChanger.BorderColor3 = Color3.fromRGB(74, 74, 74)
+RankChanger.BorderSizePixel = 7
+RankChanger.Position = UDim2.new(0.70892626, 0, 0.847965598, 0)
+RankChanger.Size = UDim2.new(0, 200, 0, 50)
+RankChanger.Font = Enum.Font.SciFi
+RankChanger.Text = "Rank Changer"
+RankChanger.TextColor3 = Color3.fromRGB(0, 255, 255)
+RankChanger.TextSize = 14.000
+RankChanger.TextWrapped = true
 
-UICorner_6.Parent = multiesp
+blackhub.Name = "blackhub"
+blackhub.Parent = MainFrame
+blackhub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+blackhub.BorderColor3 = Color3.fromRGB(74, 74, 74)
+blackhub.BorderSizePixel = 7
+blackhub.Position = UDim2.new(0.680465698, 0, 0.336188346, 0)
+blackhub.Size = UDim2.new(0, 133, 0, 50)
+blackhub.Font = Enum.Font.SciFi
+blackhub.Text = "BlackHub"
+blackhub.TextColor3 = Color3.fromRGB(0, 255, 255)
+blackhub.TextSize = 14.000
+blackhub.TextWrapped = true
 
-respawnscript.Name = "respawn script"
-respawnscript.Parent = ScrollingFrame
-respawnscript.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-respawnscript.Position = UDim2.new(0.372596413, 0, 0.131028309, 0)
-respawnscript.Size = UDim2.new(0, 163, 0, 50)
-respawnscript.Font = Enum.Font.SourceSans
-respawnscript.Text = "[Respawn script]"
-respawnscript.TextColor3 = Color3.fromRGB(0, 0, 0)
-respawnscript.TextScaled = true
-respawnscript.TextSize = 14.000
-respawnscript.TextWrapped = true
-respawnscript.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Respawn-script-/main/respawn.txt", true))()
-end)
+blackhub20.Name = "blackhub2.0"
+blackhub20.Parent = MainFrame
+blackhub20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+blackhub20.BorderColor3 = Color3.fromRGB(74, 74, 74)
+blackhub20.BorderSizePixel = 7
+blackhub20.Position = UDim2.new(0.680465698, 0, 0.496787935, 0)
+blackhub20.Size = UDim2.new(0, 133, 0, 50)
+blackhub20.Font = Enum.Font.SciFi
+blackhub20.Text = "BlackHub2.0"
+blackhub20.TextColor3 = Color3.fromRGB(0, 255, 255)
+blackhub20.TextSize = 14.000
+blackhub20.TextWrapped = true
 
-UICorner_7.Parent = respawnscript
-
-blackhub1.Name = "black hub 1"
-blackhub1.Parent = ScrollingFrame
-blackhub1.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-blackhub1.Position = UDim2.new(0.0443991572, 0, 0.221377373, 0)
-blackhub1.Size = UDim2.new(0, 163, 0, 50)
-blackhub1.Font = Enum.Font.SourceSans
-blackhub1.Text = "[BlackHub1]"
-blackhub1.TextColor3 = Color3.fromRGB(0, 0, 0)
-blackhub1.TextScaled = true
-blackhub1.TextSize = 14.000
-blackhub1.TextWrapped = true
-blackhub1.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Black_Hub.txt",true))()
-end)
-
-UICorner_8.Parent = blackhub1
-
-infyield.Name = "inf yield"
-infyield.Parent = ScrollingFrame
-infyield.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-infyield.Position = UDim2.new(0.0443991572, 0, 0.312469274, 0)
-infyield.Size = UDim2.new(0, 163, 0, 50)
-infyield.Font = Enum.Font.SourceSans
-infyield.Text = "[Infinite Yield]"
-infyield.TextColor3 = Color3.fromRGB(0, 0, 0)
-infyield.TextScaled = true
-infyield.TextSize = 14.000
-infyield.TextWrapped = true
-infyield.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-
-UICorner_9.Parent = infyield
-
-cmdx.Name = "cmd x"
-cmdx.Parent = ScrollingFrame
-cmdx.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-cmdx.Position = UDim2.new(0.375678062, 0, 0.311873317, 0)
-cmdx.Size = UDim2.new(0, 163, 0, 50)
-cmdx.Font = Enum.Font.SourceSans
-cmdx.Text = "[CMD-X]"
-cmdx.TextColor3 = Color3.fromRGB(0, 0, 0)
-cmdx.TextScaled = true
+cmdx.Name = "cmd-x"
+cmdx.Parent = MainFrame
+cmdx.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+cmdx.BorderColor3 = Color3.fromRGB(74, 74, 74)
+cmdx.BorderSizePixel = 7
+cmdx.Position = UDim2.new(0.70892626, 0, 0.670235395, 0)
+cmdx.Size = UDim2.new(0, 200, 0, 50)
+cmdx.Font = Enum.Font.SciFi
+cmdx.Text = "Cmd-x"
+cmdx.TextColor3 = Color3.fromRGB(0, 255, 255)
 cmdx.TextSize = 14.000
 cmdx.TextWrapped = true
-cmdx.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
-end)
 
-UICorner_10.Parent = cmdx
+respawnScript.Name = "respawnScript"
+respawnScript.Parent = MainFrame
+respawnScript.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+respawnScript.BorderColor3 = Color3.fromRGB(74, 74, 74)
+respawnScript.BorderSizePixel = 7
+respawnScript.Position = UDim2.new(0.369987071, 0, 0.668094218, 0)
+respawnScript.Size = UDim2.new(0, 200, 0, 50)
+respawnScript.Font = Enum.Font.SciFi
+respawnScript.Text = "RespawnScript"
+respawnScript.TextColor3 = Color3.fromRGB(0, 255, 255)
+respawnScript.TextSize = 14.000
+respawnScript.TextWrapped = true
 
-chatspy.Name = "chat spy"
-chatspy.Parent = ScrollingFrame
-chatspy.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-chatspy.Position = UDim2.new(0.680762827, 0, 0.311873287, 0)
-chatspy.Size = UDim2.new(0, 163, 0, 50)
-chatspy.Font = Enum.Font.SourceSans
-chatspy.Text = "[Chat spy]"
-chatspy.TextColor3 = Color3.fromRGB(0, 0, 0)
-chatspy.TextScaled = true
-chatspy.TextSize = 14.000
-chatspy.TextWrapped = true
-chatspy.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/chatspy.txt",true))()
-end)
+MultiChecker.Name = "MultiChecker"
+MultiChecker.Parent = MainFrame
+MultiChecker.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MultiChecker.BorderColor3 = Color3.fromRGB(74, 74, 74)
+MultiChecker.BorderSizePixel = 7
+MultiChecker.Position = UDim2.new(0.369987071, 0, 0.84582442, 0)
+MultiChecker.Size = UDim2.new(0, 200, 0, 50)
+MultiChecker.Font = Enum.Font.SciFi
+MultiChecker.Text = "MultiChecker"
+MultiChecker.TextColor3 = Color3.fromRGB(0, 255, 255)
+MultiChecker.TextSize = 14.000
+MultiChecker.TextWrapped = true
 
-UICorner_11.Parent = chatspy
+clicktotp.Name = "click to tp"
+clicktotp.Parent = MainFrame
+clicktotp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+clicktotp.BorderColor3 = Color3.fromRGB(74, 74, 74)
+clicktotp.BorderSizePixel = 7
+clicktotp.Position = UDim2.new(0.369987071, 0, 0.494646668, 0)
+clicktotp.Size = UDim2.new(0, 200, 0, 50)
+clicktotp.Font = Enum.Font.SciFi
+clicktotp.Text = "Click to Tp Tool"
+clicktotp.TextColor3 = Color3.fromRGB(0, 255, 255)
+clicktotp.TextSize = 14.000
+clicktotp.TextWrapped = true
 
-Autoattack.Name = "Auto attack"
-Autoattack.Parent = ScrollingFrame
-Autoattack.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-Autoattack.Position = UDim2.new(0.0501519963, 0, 0.050855305, 0)
-Autoattack.Size = UDim2.new(0, 171, 0, 50)
-Autoattack.Font = Enum.Font.SourceSans
-Autoattack.Text = "[Auto attack]"
-Autoattack.TextColor3 = Color3.fromRGB(0, 0, 0)
-Autoattack.TextScaled = true
-Autoattack.TextSize = 38.000
-Autoattack.TextWrapped = true
-Autoattack.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/auto%20spam%20on",true))()
-end)
+Repscript.Name = "Rep script"
+Repscript.Parent = MainFrame
+Repscript.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Repscript.BorderColor3 = Color3.fromRGB(74, 74, 74)
+Repscript.BorderSizePixel = 7
+Repscript.Position = UDim2.new(0.0323415399, 0, 0.494646668, 0)
+Repscript.Size = UDim2.new(0, 200, 0, 50)
+Repscript.Font = Enum.Font.SciFi
+Repscript.Text = "Rep Script"
+Repscript.TextColor3 = Color3.fromRGB(0, 255, 255)
+Repscript.TextSize = 14.000
+Repscript.TextWrapped = true
 
-UICorner_12.Parent = Autoattack
+ChatSpy.Name = "ChatSpy"
+ChatSpy.Parent = MainFrame
+ChatSpy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ChatSpy.BorderColor3 = Color3.fromRGB(74, 74, 74)
+ChatSpy.BorderSizePixel = 7
+ChatSpy.Position = UDim2.new(0.0323415399, 0, 0.668094218, 0)
+ChatSpy.Size = UDim2.new(0, 200, 0, 50)
+ChatSpy.Font = Enum.Font.SciFi
+ChatSpy.Text = "ChatSpy"
+ChatSpy.TextColor3 = Color3.fromRGB(0, 255, 255)
+ChatSpy.TextSize = 14.000
+ChatSpy.TextWrapped = true
 
-bettergraphics.Name = "better graphics"
-bettergraphics.Parent = ScrollingFrame
-bettergraphics.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-bettergraphics.Position = UDim2.new(0.0443991572, 0, 0.408978522, 0)
-bettergraphics.Size = UDim2.new(0, 163, 0, 50)
-bettergraphics.Font = Enum.Font.SourceSans
-bettergraphics.Text = "[Better Graphics]          (Might cause a bit of lag)"
-bettergraphics.TextColor3 = Color3.fromRGB(0, 0, 0)
-bettergraphics.TextScaled = true
-bettergraphics.TextSize = 14.000
-bettergraphics.TextWrapped = true
-bettergraphics.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Ultra_Graphics_Script.lua",true))()
-end)
-
-UICorner_13.Parent = bettergraphics
-
-blockscriptfe.Name = "block script fe"
-blockscriptfe.Parent = ScrollingFrame
-blockscriptfe.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-blockscriptfe.Position = UDim2.new(0.380300522, 0, 0.408978522, 0)
-blockscriptfe.Size = UDim2.new(0, 163, 0, 50)
-blockscriptfe.Font = Enum.Font.SourceSans
-blockscriptfe.Text = "[FE] Block Script"
-blockscriptfe.TextColor3 = Color3.fromRGB(0, 0, 0)
-blockscriptfe.TextScaled = true
-blockscriptfe.TextSize = 14.000
-blockscriptfe.TextWrapped = true
-blockscriptfe.MouseButton1Down:connect(function()
-	print("not currently working lol")
-	--script here
-end)
-
-UICorner_14.Parent = blockscriptfe
-
-animationmoves.Name = "animation moves"
-animationmoves.Parent = ScrollingFrame
-animationmoves.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-animationmoves.Position = UDim2.new(0.679221928, 0, 0.408978522, 0)
-animationmoves.Size = UDim2.new(0, 163, 0, 50)
-animationmoves.Font = Enum.Font.SourceSans
-animationmoves.Text = "[Animation dances]"
-animationmoves.TextColor3 = Color3.fromRGB(0, 0, 0)
-animationmoves.TextScaled = true
-animationmoves.TextSize = 14.000
-animationmoves.TextWrapped = true
-animationmoves.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
-end)
-
-UICorner_15.Parent = animationmoves
-
-trainfist.Name = "train fist "
-trainfist.Parent = ScrollingFrame
-trainfist.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-trainfist.Position = UDim2.new(0.380300522, 0, 0.49727419, 0)
-trainfist.Size = UDim2.new(0, 163, 0, 50)
-trainfist.Font = Enum.Font.SourceSans
-trainfist.Text = "[Train fist] (anti-afk included)"
-trainfist.TextColor3 = Color3.fromRGB(0, 0, 0)
-trainfist.TextScaled = true
-trainfist.TextSize = 14.000
-trainfist.TextWrapped = true
-trainfist.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/train%20fist",true))()
-end)
-
-UICorner_16.Parent = trainfist
-
-antichatspy.Name = "anti chat spy"
-antichatspy.Parent = ScrollingFrame
-antichatspy.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-antichatspy.Position = UDim2.new(0.0490216166, 0, 0.4962475, 0)
-antichatspy.Size = UDim2.new(0, 163, 0, 50)
-antichatspy.Font = Enum.Font.SourceSans
-antichatspy.Text = "[Anti-Chat spy/logger]"
-antichatspy.TextColor3 = Color3.fromRGB(0, 0, 0)
-antichatspy.TextScaled = true
-antichatspy.TextSize = 14.000
-antichatspy.TextWrapped = true
-antichatspy.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Anti_Chat_log.lua",true))()
-end)
-
-UICorner_17.Parent = antichatspy
-
-godmode.Name = "god mode"
-godmode.Parent = ScrollingFrame
-godmode.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-godmode.Position = UDim2.new(0.677681088, 0, 0.4962475, 0)
-godmode.Size = UDim2.new(0, 163, 0, 50)
-godmode.Font = Enum.Font.SourceSans
-godmode.Text = "[God mode]                       (go to ghost rider idiot)"
-godmode.TextColor3 = Color3.fromRGB(0, 0, 0)
-godmode.TextScaled = true
-godmode.TextSize = 14.000
-godmode.TextWrapped = true
-godmode.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/god%20mode%20script.txt",true))()
-end)
-
-UICorner_18.Parent = godmode
-
-cbring.Name = "Keep rep script"
-cbring.Parent = ScrollingFrame
-cbring.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-cbring.Position = UDim2.new(0.369514674, 0, 0.579409719, 0)
-cbring.Size = UDim2.new(0, 163, 0, 50)
-cbring.Font = Enum.Font.SourceSans
-cbring.Text = "[Keep Rep script]"
-cbring.TextColor3 = Color3.fromRGB(0, 0, 0)
-cbring.TextScaled = true
-cbring.TextSize = 14.000
-cbring.TextWrapped = true
-cbring.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	game.Players.LocalPlayer.Character.Head.NameBbGui.NameTxt: Destroy()
-end)
-
-UICorner_19.Parent = cbring
-
-novoid.Name = "novoid"
-novoid.Parent = ScrollingFrame
-novoid.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-novoid.Position = UDim2.new(0.680762768, 0, 0.585569859, 0)
-novoid.Size = UDim2.new(0, 163, 0, 50)
-novoid.Font = Enum.Font.SourceSans
-novoid.Text = "[Novoid]                                     (made a new one should work against this new void i beg)"
-novoid.TextColor3 = Color3.fromRGB(0, 0, 0)
-novoid.TextScaled = true
-novoid.TextSize = 14.000
-novoid.TextWrapped = true
-novoid.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	while true do
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/novoid%20%20script",true))()
-	end
-end)
-
-UICorner_20.Parent = novoid
-
-earrape.Name = "ear rape"
-earrape.Parent = ScrollingFrame
-earrape.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-earrape.Position = UDim2.new(0.0443991199, 0, 0.581463099, 0)
-earrape.Size = UDim2.new(0, 163, 0, 50)
-earrape.Font = Enum.Font.SourceSans
-earrape.Text = "[Ear rape loop]         (annoying and works in any game)"
-earrape.TextColor3 = Color3.fromRGB(0, 0, 0)
-earrape.TextScaled = true
-earrape.TextSize = 14.000
-earrape.TextWrapped = true
-earrape.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/ear%20rape%20loop.lua",true))()
-end)
-
-UICorner_21.Parent = earrape
-
-sptsdarkmode.Name = "spts darkmode"
-sptsdarkmode.Parent = ScrollingFrame
-sptsdarkmode.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-sptsdarkmode.Position = UDim2.new(0.0937122852, 0, 0.675776064, 0)
-sptsdarkmode.Size = UDim2.new(0, 540, 0, 53)
-sptsdarkmode.Font = Enum.Font.SourceSans
-sptsdarkmode.Text = "[Spts-Dark Mode]"
-sptsdarkmode.TextColor3 = Color3.fromRGB(0, 0, 0)
-sptsdarkmode.TextScaled = true
-sptsdarkmode.TextSize = 14.000
-sptsdarkmode.TextWrapped = true
-sptsdarkmode.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Spts%20darkmode.txt",true))()
-end)
-
-UICorner_22.Parent = sptsdarkmode
-
-sptsdarkmode_2.Name = "spts darkmode"
-sptsdarkmode_2.Parent = ScrollingFrame
-sptsdarkmode_2.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-sptsdarkmode_2.Position = UDim2.new(0.0906306207, 0, 0.756884873, 0)
-sptsdarkmode_2.Size = UDim2.new(0, 540, 0, 53)
-sptsdarkmode_2.Font = Enum.Font.SourceSans
-sptsdarkmode_2.Text = "[Control the tornado]                                                                                                                       {press \"E\" and then point your mouse to wherever you want the tornado to go}"
-sptsdarkmode_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-sptsdarkmode_2.TextScaled = true
-sptsdarkmode_2.TextSize = 14.000
-sptsdarkmode_2.TextWrapped = true
-sptsdarkmode_2.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=196904458"
-	s.Volume = 100
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Tornado.txt",true))()
-end)
-
-UICorner_23.Parent = sptsdarkmode_2
-
-loopinvis.Name = "loop invis"
-loopinvis.Parent = ScrollingFrame
-loopinvis.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-loopinvis.Position = UDim2.new(0.0937122852, 0, 0.827206671, 0)
-loopinvis.Size = UDim2.new(0, 540, 0, 53)
-loopinvis.Font = Enum.Font.SourceSans
-loopinvis.Text = "[Loop invis]                                                                                                            (if you die u gonna have to rejoin lol)"
-loopinvis.TextColor3 = Color3.fromRGB(0, 0, 0)
-loopinvis.TextScaled = true
-loopinvis.TextSize = 14.000
-loopinvis.TextWrapped = true
-loopinvis.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=137473066"
-	s.Volume = 10
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	_G.on = 1
-	while _G.on == 1
-	do
-		local args = {
-			[1] = {
-				[1] = "Skill_Invisible",
-				[2] = "Start"
-			}
-		}
-
-		game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-		game:GetService("Players").LocalPlayer.Character.Head.InvisibilityUseSound:Destroy()
-	end
-end)
-
-UICorner_24.Parent = loopinvis
-
-voidspam.Name = "void spam"
-voidspam.Parent = ScrollingFrame
-voidspam.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-voidspam.Position = UDim2.new(0.0906306207, 0, 0.911562502, 0)
-voidspam.Size = UDim2.new(0, 540, 0, 53)
-voidspam.Font = Enum.Font.SourceSans
-voidspam.Text = "[Void spam]                                                                                                                (if it breaks re-xecute)"
-voidspam.TextColor3 = Color3.fromRGB(0, 0, 0)
-voidspam.TextScaled = true
-voidspam.TextSize = 14.000
-voidspam.TextWrapped = true
-voidspam.MouseButton1Down:connect(function()
-	s = Instance.new("Sound",game.Workspace)
-	s.Name = "Sound"
-	s.SoundId = "http://www.roblox.com/asset?id=137473066"
-	s.Volume = 10
-	s.Looped = false
-	s.archivable = false
-	s:play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/spam%20void",true))()
-end)
-
-UICorner_25.Parent = voidspam
+AntiChatLogger.Name = "AntiChatLogger"
+AntiChatLogger.Parent = MainFrame
+AntiChatLogger.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AntiChatLogger.BorderColor3 = Color3.fromRGB(74, 74, 74)
+AntiChatLogger.BorderSizePixel = 7
+AntiChatLogger.Position = UDim2.new(0.0323415399, 0, 0.84582442, 0)
+AntiChatLogger.Size = UDim2.new(0, 200, 0, 50)
+AntiChatLogger.Font = Enum.Font.SciFi
+AntiChatLogger.Text = "Anti Chat Logger"
+AntiChatLogger.TextColor3 = Color3.fromRGB(0, 255, 255)
+AntiChatLogger.TextSize = 14.000
+AntiChatLogger.TextWrapped = true
 
 togglegui.Name = "toggle gui"
 togglegui.Parent = ScreenGui
-togglegui.BackgroundColor3 = Color3.fromRGB(170, 17, 17)
-togglegui.Position = UDim2.new(0, 0, 0.818831921, 0)
-togglegui.Size = UDim2.new(0, 161, 0, 43)
-togglegui.Font = Enum.Font.SpecialElite
-togglegui.Text = "toggle Gui "
-togglegui.TextColor3 = Color3.fromRGB(0, 0, 0)
-togglegui.TextSize = 25.000
-togglegui.TextWrapped = true
+togglegui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+togglegui.Position = UDim2.new(0.0247093029, 0, 0.470989674, 0)
+togglegui.Size = UDim2.new(0, 36, 0, 50)
+togglegui.Image = "http://www.roblox.com/asset/?id=7018107931"
+togglegui.ImageColor3 = Color3.fromRGB(204, 201, 199)
+togglegui.ScaleType = Enum.ScaleType.Slice
+togglegui.SliceScale = 0.000
 
-UICorner_26.Parent = togglegui
+MainFrame2.Name = "MainFrame2"
+MainFrame2.Parent = ScreenGui
+MainFrame2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame2.BorderSizePixel = 4
+MainFrame2.Position = UDim2.new(0.21875, 0, 0.233219564, 0)
+MainFrame2.Size = UDim2.new(0, 773, 0, 467)
+MainFrame2.Visible = false
+
+backwards.Name = "backwards"
+backwards.Parent = MainFrame2
+backwards.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+backwards.Position = UDim2.new(5.96046448e-08, 0, 0.389721632, 0)
+backwards.Rotation = 180.000
+backwards.Size = UDim2.new(0, 91, 0, 100)
+backwards.Image = "http://www.roblox.com/asset/?id=1594671524"
+backwards.ImageColor3 = Color3.fromRGB(0, 255, 255)
+
+forward2.Name = "forward2"
+forward2.Parent = MainFrame2
+forward2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+forward2.Position = UDim2.new(0.880565226, 0, 0.389721632, 0)
+forward2.Size = UDim2.new(0, 91, 0, 100)
+forward2.Image = "http://www.roblox.com/asset/?id=1594671524"
+forward2.ImageColor3 = Color3.fromRGB(0, 255, 255)
+
+OpVoid.Name = "Op Void"
+OpVoid.Parent = MainFrame2
+OpVoid.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OpVoid.BorderColor3 = Color3.fromRGB(74, 74, 74)
+OpVoid.BorderSizePixel = 7
+OpVoid.Position = UDim2.new(0.0426908135, 0, 0.0663811564, 0)
+OpVoid.Size = UDim2.new(0, 683, 0, 50)
+OpVoid.Font = Enum.Font.SciFi
+OpVoid.Text = "Op Void"
+OpVoid.TextColor3 = Color3.fromRGB(0, 255, 255)
+OpVoid.TextSize = 14.000
+
+InvisLoop.Name = "Invis Loop"
+InvisLoop.Parent = MainFrame2
+InvisLoop.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InvisLoop.BorderColor3 = Color3.fromRGB(74, 74, 74)
+InvisLoop.BorderSizePixel = 7
+InvisLoop.Position = UDim2.new(0.0426908135, 0, 0.261241972, 0)
+InvisLoop.Size = UDim2.new(0, 683, 0, 50)
+InvisLoop.Font = Enum.Font.SciFi
+InvisLoop.Text = "Invis Loop"
+InvisLoop.TextColor3 = Color3.fromRGB(0, 255, 255)
+InvisLoop.TextSize = 14.000
+
+Novoid.Name = "Novoid"
+Novoid.Parent = MainFrame2
+Novoid.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Novoid.BorderColor3 = Color3.fromRGB(74, 74, 74)
+Novoid.BorderSizePixel = 7
+Novoid.Position = UDim2.new(0.130659848, 0, 0.471092075, 0)
+Novoid.Size = UDim2.new(0, 572, 0, 50)
+Novoid.Font = Enum.Font.SciFi
+Novoid.Text = "Novoid"
+Novoid.TextColor3 = Color3.fromRGB(0, 255, 255)
+Novoid.TextSize = 14.000
+
+DarkMode.Name = "DarkMode"
+DarkMode.Parent = MainFrame2
+DarkMode.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DarkMode.BorderColor3 = Color3.fromRGB(74, 74, 74)
+DarkMode.BorderSizePixel = 7
+DarkMode.Position = UDim2.new(0.0426908135, 0, 0.674518228, 0)
+DarkMode.Size = UDim2.new(0, 683, 0, 50)
+DarkMode.Font = Enum.Font.SciFi
+DarkMode.Text = "S.P.T.S DarkMode"
+DarkMode.TextColor3 = Color3.fromRGB(0, 255, 255)
+DarkMode.TextSize = 14.000
+
+TrainFist.Name = "Train Fist"
+TrainFist.Parent = MainFrame2
+TrainFist.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TrainFist.BorderColor3 = Color3.fromRGB(74, 74, 74)
+TrainFist.BorderSizePixel = 7
+TrainFist.Position = UDim2.new(0.0426908135, 0, 0.852248371, 0)
+TrainFist.Size = UDim2.new(0, 683, 0, 50)
+TrainFist.Font = Enum.Font.SciFi
+TrainFist.Text = "Train Fist"
+TrainFist.TextColor3 = Color3.fromRGB(0, 255, 255)
+TrainFist.TextSize = 14.000
+
+MainFrame3.Name = "MainFrame3"
+MainFrame3.Parent = ScreenGui
+MainFrame3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame3.BorderSizePixel = 4
+MainFrame3.Position = UDim2.new(0.21875, 0, 0.233219564, 0)
+MainFrame3.Size = UDim2.new(0, 773, 0, 467)
+MainFrame3.Visible = false
+
+backwards_2.Name = "backwards"
+backwards_2.Parent = MainFrame3
+backwards_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+backwards_2.Position = UDim2.new(5.96046448e-08, 0, 0.389721632, 0)
+backwards_2.Rotation = 180.000
+backwards_2.Size = UDim2.new(0, 91, 0, 100)
+backwards_2.Image = "http://www.roblox.com/asset/?id=1594671524"
+backwards_2.ImageColor3 = Color3.fromRGB(0, 255, 255)
+
+forward2_2.Name = "forward2"
+forward2_2.Parent = MainFrame3
+forward2_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+forward2_2.Position = UDim2.new(0.880565226, 0, 0.389721632, 0)
+forward2_2.Size = UDim2.new(0, 91, 0, 100)
+forward2_2.Image = "http://www.roblox.com/asset/?id=1594671524"
+forward2_2.ImageColor3 = Color3.fromRGB(0, 255, 255)
+
+Zen.Name = "Zen"
+Zen.Parent = MainFrame3
+Zen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Zen.BorderColor3 = Color3.fromRGB(74, 74, 74)
+Zen.BorderSizePixel = 7
+Zen.Position = UDim2.new(0.0582147464, 0, 0.094218418, 0)
+Zen.Size = UDim2.new(0, 181, 0, 50)
+Zen.Font = Enum.Font.SciFi
+Zen.Text = "Zen"
+Zen.TextColor3 = Color3.fromRGB(0, 255, 255)
+Zen.TextSize = 14.000
+
+Spawn.Name = "Spawn"
+Spawn.Parent = MainFrame3
+Spawn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Spawn.BorderColor3 = Color3.fromRGB(74, 74, 74)
+Spawn.BorderSizePixel = 7
+Spawn.Position = UDim2.new(0.382923692, 0, 0.094218418, 0)
+Spawn.Size = UDim2.new(0, 181, 0, 50)
+Spawn.Font = Enum.Font.SciFi
+Spawn.Text = "Spawn"
+Spawn.TextColor3 = Color3.fromRGB(0, 255, 255)
+Spawn.TextSize = 14.000
+
+LeaderBoard.Name = "LeaderBoard"
+LeaderBoard.Parent = MainFrame3
+LeaderBoard.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LeaderBoard.BorderColor3 = Color3.fromRGB(74, 74, 74)
+LeaderBoard.BorderSizePixel = 7
+LeaderBoard.Position = UDim2.new(0.72574389, 0, 0.094218418, 0)
+LeaderBoard.Size = UDim2.new(0, 181, 0, 50)
+LeaderBoard.Font = Enum.Font.SciFi
+LeaderBoard.Text = "LeaderBoards"
+LeaderBoard.TextColor3 = Color3.fromRGB(0, 255, 255)
+LeaderBoard.TextSize = 14.000
+
+godmode.Name = "godmode"
+godmode.Parent = MainFrame3
+godmode.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+godmode.BorderColor3 = Color3.fromRGB(74, 74, 74)
+godmode.BorderSizePixel = 7
+godmode.Position = UDim2.new(0.40232861, 0, 0.417558908, 0)
+godmode.Size = UDim2.new(0, 181, 0, 50)
+godmode.Font = Enum.Font.SciFi
+godmode.Text = "GodMode(Ghost)"
+godmode.TextColor3 = Color3.fromRGB(0, 255, 255)
+godmode.TextSize = 14.000
 
 -- Scripts:
 
-local function VDBBCCV_fake_script() -- ScrollingFrame.LocalScript 
-	local script = Instance.new('LocalScript', ScrollingFrame)
+local function BZBFYU_fake_script() -- MainFrame.draggableScript 
+	local script = Instance.new('LocalScript', MainFrame)
 
-	local plr = game.Players.LocalPlayer
-	
-	
-	plr:GetMouse().KeyDown:Connect(function(K)
-		if K == "q" then
-			script.Parent.Visible = not script.Parent.Visible
-		end
-	end)
-end
-coroutine.wrap(VDBBCCV_fake_script)()
-local function YIPSEBZ_fake_script() -- togglegui.LocalScript 
-	local script = Instance.new('LocalScript', togglegui)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		s = Instance.new("Sound",game.Workspace)
-		s.Name = "Sound"
-		s.SoundId = "http://www.roblox.com/asset?id=196904458"
-		s.Volume = 100
-		s.Looped = false
-		s.archivable = false
-		s:play()
-		script.Parent.Parent.ScrollingFrame.Visible = not script.Parent.Parent.ScrollingFrame.Visible
-	end)
-	
-end
-coroutine.wrap(YIPSEBZ_fake_script)()
-
-
-local function XRPTLDZ_fake_script() -- MainFrame.draggablescript 
-	local script = Instance.new('LocalScript', ScrollingFrame)
-
-	script.Parent.Selectable = true
 	script.Parent.Active = true
+	script.Parent.Selectable = true
 	script.Parent.Draggable = true
 	
 end
-coroutine.wrap(XRPTLDZ_fake_script)()
+coroutine.wrap(BZBFYU_fake_script)()
+local function EZPO_fake_script() -- forward1.forward.script1 
+	local script = Instance.new('LocalScript', forward1)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.MainFrame2.Visible = true
+	end)
+end
+coroutine.wrap(EZPO_fake_script)()
+local function TXWQI_fake_script() -- autoattack.autoattack 
+	local script = Instance.new('LocalScript', autoattack)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/auto%20spam%20on", true))()
+	end)
+end
+coroutine.wrap(TXWQI_fake_script)()
+local function RZNH_fake_script() -- autoattackoff.auto Attack off 
+	local script = Instance.new('LocalScript', autoattackoff)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/auto%20spam%20off", true))()
+	end)
+end
+coroutine.wrap(RZNH_fake_script)()
+local function RDLWJF_fake_script() -- PsychicAll.psychic all on 
+	local script = Instance.new('LocalScript', PsychicAll)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/psychic%20all%20on", true))()
+	end)
+end
+coroutine.wrap(RDLWJF_fake_script)()
+local function QQEILPW_fake_script() -- PsychicAllOff.psychicall off script 
+	local script = Instance.new('LocalScript', PsychicAllOff)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/psychic%20all%20off", true))()
+	end)
+end
+coroutine.wrap(QQEILPW_fake_script)()
+local function WJVX_fake_script() -- PsychicToggle.psychic Toggle 
+	local script = Instance.new('LocalScript', PsychicToggle)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Psychic%20Script.lua", true))()
+	end)
+end
+coroutine.wrap(WJVX_fake_script)()
+local function YADMDB_fake_script() -- RankChanger.rankChanger 
+	local script = Instance.new('LocalScript', RankChanger)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/server%20rank%20changer.txt",true))()
+	end)
+end
+coroutine.wrap(YADMDB_fake_script)()
+local function HYQAL_fake_script() -- blackhub.blackhub 
+	local script = Instance.new('LocalScript', blackhub)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Black_Hub.txt", true))()
+	end)
+end
+coroutine.wrap(HYQAL_fake_script)()
+local function UBMV_fake_script() -- blackhub20.blackhub2.0/msg 
+	local script = Instance.new('LocalScript', blackhub20)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/message.txt", true))()
+	end)
+end
+coroutine.wrap(UBMV_fake_script)()
+local function RCBQAEN_fake_script() -- cmdx.Cmd-x 
+	local script = Instance.new('LocalScript', cmdx)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+	end)
+end
+coroutine.wrap(RCBQAEN_fake_script)()
+local function GRKKIW_fake_script() -- respawnScript.Respawn SCript 
+	local script = Instance.new('LocalScript', respawnScript)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Respawn-script-/main/respawn.txt", true))()
+	end)
+end
+coroutine.wrap(GRKKIW_fake_script)()
+local function HGDR_fake_script() -- MultiChecker.miltiscript 
+	local script = Instance.new('LocalScript', MultiChecker)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/multi%20checker",true))()
+	end)
+end
+coroutine.wrap(HGDR_fake_script)()
+local function EQZN_fake_script() -- clicktotp.click to tp 
+	local script = Instance.new('LocalScript', clicktotp)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		mouse = game.Players.LocalPlayer:GetMouse()
+		tool = Instance.new("Tool")
+		tool.RequiresHandle = false
+		tool.Name = "Tp Tool😎"
+		tool.Activated:connect(function()
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end)
+		tool.Parent = game.Players.LocalPlayer.Backpack
+	end)
+end
+coroutine.wrap(EQZN_fake_script)()
+local function MBAYVZ_fake_script() -- Repscript.RepScript 
+	local script = Instance.new('LocalScript', Repscript)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local nigga = game.Players.LocalPlayer.Character.Head
+		nigga.NameBbGui.NameTxt: Destroy()
+	end)
+end
+coroutine.wrap(MBAYVZ_fake_script)()
+local function YFZMYDA_fake_script() -- ChatSpy.chatspyscript 
+	local script = Instance.new('LocalScript', ChatSpy)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/chatspy.txt",true))()
+	end)
+end
+coroutine.wrap(YFZMYDA_fake_script)()
+local function YHJL_fake_script() -- AntiChatLogger.AntichatLogger 
+	local script = Instance.new('LocalScript', AntiChatLogger)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/nologs", true))()
+	end)
+end
+coroutine.wrap(YHJL_fake_script)()
+local function ERXXX_fake_script() -- togglegui.toggleGui 
+	local script = Instance.new('LocalScript', togglegui)
+
+	
+	script.Parent.Active = true
+	script.Parent.Selectable= true
+	script.Parent.Draggable = true
+	
+	
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.MainFrame.Visible == true or script.Parent.Parent.MainFrame2.Visible == true or script.Parent.Parent.MainFrame3.Visible == true then
+			script.Parent.Parent.MainFrame2.Visible = false
+			script.Parent.Parent.MainFrame.Visible = false
+			script.Parent.Parent.MainFrame3.Visible = false
+		else
+			script.Parent.Parent.MainFrame.Visible = true
+		end
+	 end)
+	
+	
+	local Imput = game:GetService("UserInputService")
+	Imput.InputBegan:connect(
+		function(inst)
+			if inst.KeyCode == Enum.KeyCode.Q then
+				if script.Parent.Parent.MainFrame.Visible == true or script.Parent.Parent.MainFrame2.Visible == true or script.Parent.Parent.MainFrame3.Visible == true	then
+					script.Parent.Parent.MainFrame3.Visible = false
+					script.Parent.Parent.MainFrame2.Visible = false
+					script.Parent.Parent.MainFrame.Visible = false
+				else
+					script.Parent.Parent.MainFrame.Visible = true
+				end
+			end
+		end
+	)
+	
+	
+end
+coroutine.wrap(ERXXX_fake_script)()
+local function OCLIJ_fake_script() -- MainFrame2.draggableScript 
+	local script = Instance.new('LocalScript', MainFrame2)
+
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+	script.Parent.Draggable = true
+	
+end
+coroutine.wrap(OCLIJ_fake_script)()
+local function ZXRG_fake_script() -- backwards.return.script2 
+	local script = Instance.new('LocalScript', backwards)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.MainFrame.Visible = true
+	end)
+end
+coroutine.wrap(ZXRG_fake_script)()
+local function WSZZHZV_fake_script() -- forward2.forward.script2 
+	local script = Instance.new('LocalScript', forward2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.MainFrame3.Visible = true
+	end)
+end
+coroutine.wrap(WSZZHZV_fake_script)()
+local function LGWI_fake_script() -- OpVoid.Void Script 
+	local script = Instance.new('LocalScript', OpVoid)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/spam%20void", true))()
+	end)
+end
+coroutine.wrap(LGWI_fake_script)()
+local function APDKN_fake_script() -- InvisLoop.Invis Loop 
+	local script = Instance.new('LocalScript', InvisLoop)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.on = 1
+		while _G.on == 1
+		do
+			local args = {
+				[1] = {
+					[1] = "Skill_Invisible",
+					[2] = "Start"
+				}
+			}
+			wait()
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+			game:GetService("Players").LocalPlayer.Character.Head.InvisibilityUseSound:Destroy()
+		end
+	end)
+end
+coroutine.wrap(APDKN_fake_script)()
+local function KEWMN_fake_script() -- Novoid.novoidscript 
+	local script = Instance.new('LocalScript', Novoid)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for _, v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+			if v.Name == "RightHand" or v.Name == "LeftHand" then
+				v:Destroy()
+			end
+		end
+	end)
+end
+coroutine.wrap(KEWMN_fake_script)()
+local function QDAPE_fake_script() -- DarkMode.Darkmode script 
+	local script = Instance.new('LocalScript', DarkMode)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/Spts%20darkmode.txt",true))()
+	end)
+end
+coroutine.wrap(QDAPE_fake_script)()
+local function RPTA_fake_script() -- TrainFist.Train fist 
+	local script = Instance.new('LocalScript', TrainFist)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Lighting.Blur.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+		-- FS script
+		local args = {
+			[1] = {
+				[1] = "Respawn"
+			}
+		}
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+		wait(3)
+		local VirtualUser = game:service "VirtualUser"
+		game:service "Players".LocalPlayer.Idled:connect(
+			function()
+				VirtualUser:CaptureController()
+				VirtualUser:ClickButton2(Vector2.new())
+				print("anti-afk Enabled")
+			end
+		)
+		plr = game.Players.LocalPlayer
+		hum = plr.Character.HumanoidRootPart
+		hum.CFrame = CFrame.new(-272, 281, 1000)
+		wait(1)
+		game.Players.LocalPlayer.Character.UpperTorso.Waist:remove()
+		wait(1)
+		plr = game.Players.LocalPlayer
+		hum = plr.Character.HumanoidRootPart
+		hum.CFrame = CFrame.new(-369, 15735, -9)
+		_G.on = 1
+		while _G.on == 1 do
+			local args = {
+				[1] = {
+					[1] = "+FS6"
+				}
+			}
+			wait(0)
+			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(RPTA_fake_script)()
+local function VMZWX_fake_script() -- MainFrame3.draggableScript 
+	local script = Instance.new('LocalScript', MainFrame3)
+
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+	script.Parent.Draggable = true
+	
+end
+coroutine.wrap(VMZWX_fake_script)()
+local function WUVI_fake_script() -- backwards_2.return.script3 
+	local script = Instance.new('LocalScript', backwards_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.MainFrame2.Visible = true
+	end)
+end
+coroutine.wrap(WUVI_fake_script)()
+local function XROJW_fake_script() -- forward2_2.forward.script3 
+	local script = Instance.new('LocalScript', forward2_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(XROJW_fake_script)()
+local function UBJVNA_fake_script() -- Zen.Zen 
+	local script = Instance.new('LocalScript', Zen)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2628, 5550, -493)
+	end)
+end
+coroutine.wrap(UBJVNA_fake_script)()
+local function ZKBJI_fake_script() -- Spawn.Spawn 
+	local script = Instance.new('LocalScript', Spawn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(316, 249, 854)
+	end)
+end
+coroutine.wrap(ZKBJI_fake_script)()
+local function NYTYVQ_fake_script() -- LeaderBoard.LB 
+	local script = Instance.new('LocalScript', LeaderBoard)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-753, 249, 746)
+	end)
+end
+coroutine.wrap(NYTYVQ_fake_script)()
+local function GMIVC_fake_script() -- godmode.god 
+	local script = Instance.new('LocalScript', godmode)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/god%20mode%20script.txt", true))()
+	end)
+	
+end
+coroutine.wrap(GMIVC_fake_script)()
