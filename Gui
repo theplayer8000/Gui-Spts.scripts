@@ -1,18 +1,3 @@
-wait(5)
-game.Lighting.Blur.Enabled = false
-game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
-game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
-
-game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
-wait(1)
-
-
-
-
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
