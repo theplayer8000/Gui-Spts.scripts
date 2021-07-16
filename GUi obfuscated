@@ -1,8 +1,5 @@
 
 wait(8)
-game.Lighting.Blur.Enabled = false
-game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
-game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
 game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
 
 
