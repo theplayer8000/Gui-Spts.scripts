@@ -1,6 +1,6 @@
 
-wait(8)
-game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+    wait()
+until game:IsLoaded()
 
 
 --AztupBrew(Fork of IronBrew2): obfuscation; Version 2.7.2
