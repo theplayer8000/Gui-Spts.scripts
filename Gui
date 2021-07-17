@@ -37,8 +37,7 @@ local godmode = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = game.CoreGui
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
