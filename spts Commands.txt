@@ -1,0 +1,314 @@
+wait(15)
+local function toCFrame(String, Separator) ---SOme code i found in the roblox dev forum
+    local Separator = Separator or ","
+    local axes = {}
+    for axis in String:gmatch("[^" .. Separator .. "]+") do
+        axes[#axes + 1] = axis
+    end
+    return CFrame.new(axes[1], axes[2], axes[3])
+end
+wait(5)
+game:GetService("Lighting").Blur.Enabled = false
+game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+
+game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+wait(4)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = toCFrame(readfile("location.txt"), ", ")
+game.Lighting.Blur.Enabled = false
+game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = toCFrame(readfile("location.txt"), ", ")
+game.Lighting.Blur.Enabled = false
+game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+
+local prefix = ">"
+local Players = game:GetService("Players").LocalPlayer
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 6) == prefix .. "cmd-x" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 9) == prefix .. "multiesp" then
+            loadstring(
+                game:HttpGet(
+                    "https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/multi%20checker",
+                    true
+                )
+            )()
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 4) == prefix .. "hop" then
+            if syn.queue_on_teleport then
+                syn.queue_on_teleport('game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()')
+            end
+            local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+            local ServersToTP =
+                HttpService:JSONDecode(
+                game:HttpGet(
+                    "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100"
+                )
+            )
+            for _, s in pairs(ServersToTP.data) do
+                if s.playing ~= s.maxPlayers then
+                    TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+                end
+            end
+        end
+
+        Players.Chatted:connect(
+            function(msg)
+                if string.sub(string.lower(msg), 1, 4) == prefix .. "dip" then
+                    wait(.5)
+                    game:Shutdown()
+                end
+            end
+        )
+
+        Players.Chatted:connect(
+            function(msg)
+                if string.sub(string.lower(msg), 1, 4) == prefix .. "afk" then
+                    game.Lighting.Blur.Enabled = false
+                    game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+                    game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+                    -- FS script
+                    local args = {
+                        [1] = {
+                            [1] = "Respawn"
+                        }
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+                    wait(3)
+                    local VirtualUser = game:service "VirtualUser"
+                    game:service "Players".LocalPlayer.Idled:connect(
+                        function()
+                            VirtualUser:CaptureController()
+                            VirtualUser:ClickButton2(Vector2.new())
+                            print("anti-afk Enabled")
+                        end
+                    )
+                    plr = game.Players.LocalPlayer
+                    hum = plr.Character.HumanoidRootPart
+                    hum.CFrame = CFrame.new(-272, 281, 1000)
+                    wait(1)
+                    game.Players.LocalPlayer.Character.UpperTorso.Waist:remove()
+                    wait(1)
+                    plr = game.Players.LocalPlayer
+                    hum = plr.Character.HumanoidRootPart
+                    hum.CFrame = CFrame.new(-369, 15735, -9)
+                    _G.on = 1
+                    while _G.on == 1 do
+                        local args = {
+                            [1] = {
+                                [1] = "+FS6"
+                            }
+                        }
+                        wait(0)
+                        game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+                    end
+                end
+            end
+        )
+
+        Players.Chatted:connect(
+            function(msg)
+                if string.sub(string.lower(msg), 1, 7) == prefix .. "ppspam" then
+                    _G.Toggle = not _G.Toggle
+                    while _G.Toggle do
+                        for i, v in pairs(game.Players:GetPlayers()) do
+                            pcall(
+                                function()
+                                    game.ReplicatedStorage.RemoteEvent:FireServer(
+                                        {"Skill_SoulAttack_Start", game.Players[v.Name]}
+                                    )
+                                    game.ReplicatedStorage.RemoteEvent:FireServer({"Skill_SoulAttack_End"})
+                                end
+                            )
+
+                            wait()
+                        end
+                    end
+                end
+            end
+        )
+
+        Players.Chatted:connect(
+            function(msg)
+                if string.sub(string.lower(msg), 1, 8) == prefix .. "respawn" then
+                    game.Lighting.Blur.Enabled = false
+                    game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+                    game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+                    local args = {
+                        [1] = {
+                            [1] = "Respawn"
+                        }
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+                end
+            end
+        )
+
+        Players.Chatted:connect(
+            function(msg)
+                if string.sub(string.lower(msg), 1, 5) == prefix .. "void" then
+                    loadstring(
+                        game:HttpGet(
+                            "https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/spam%20void",
+                            true
+                        )
+                    )()
+                end
+            end
+        )
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 6) == prefix .. "spawn" then
+            plr = game.Players.LocalPlayer
+            hum = plr.Character.HumanoidRootPart
+            hum.CFrame = CFrame.new(316, 249, 854)
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 3) == prefix .. "lb" then
+            plr = game.Players.LocalPlayer
+            hum = plr.Character.HumanoidRootPart
+            hum.CFrame = CFrame.new(-753, 249, 746)
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 4) == prefix .. "zen" then
+            plr = game.Players.LocalPlayer
+            hum = plr.Character.HumanoidRootPart
+            hum.CFrame = CFrame.new(-2628, 5550, -493)
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 6) == prefix .. "ghost" then
+            plr = game.Players.LocalPlayer
+            hum = plr.Character.HumanoidRootPart
+            hum.CFrame = CFrame.new(173, 249, 1226)
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 7) == prefix .. "novoid" then
+            for _, v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                if v.Name == "RightHand" or v.Name == "LeftHand" then
+                    v:Destroy()
+                end
+            end
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 6) == prefix .. "norep" then
+            game.Players.LocalPlayer.Character.Head.NameBbGui.NameTxt:Destroy()
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 4) == prefix .. "god" then
+            loadstring(
+                game:HttpGet(
+                    "https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/god%20mode%20script.txt",
+                    true
+                )
+            )()
+        end
+    end
+)
+
+local function toCFrame(String, Separator) ---SOme code i found in the roblox dev forum
+    local Separator = Separator or ","
+    local axes = {}
+    for axis in String:gmatch("[^" .. Separator .. "]+") do
+        axes[#axes + 1] = axis
+    end
+    return CFrame.new(axes[1], axes[2], axes[3])
+end
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 9) == prefix .. "setspawn" then
+            local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            writefile("location.txt", tostring(pos))
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 7) == prefix .. "nologs" then
+            loadstring(
+                game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Gui-Spts.scripts/main/nologs", true)
+            )()
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 8) == prefix .. "cwspace" then
+            _G.Toggle = true
+            while _G.Toggle do
+                wait()
+                game:GetService("Workspace").SoulAttackBeam2:Destroy()
+                game:GetService("Workspace").SoulAttackBeam1:Destroy()
+            end
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 9) == prefix .. "toggleff" then
+            game.Players.LocalPlayer.Character.GodModeShield.Visible =
+                not game.Players.LocalPlayer.Character.GodModeShield.Visible
+        end
+    end
+)
+
+Players.Chatted:connect(
+    function(msg)
+        if string.sub(string.lower(msg), 1, 13) == prefix .. "togglenovoid" then
+            _G.Toggle = not _G.Toggle
+            while _G.Toggle do
+                wait()
+                for _, v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                    if v.Name == "RightHand" or v.Name == "LeftHand" then
+                        v:Destroy()
+                    end
+                end
+            end
+        end
+    end
+)
